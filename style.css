@@ -96,11 +96,21 @@ body {
 @media (max-width: 750px) {
     header {
         padding: 0;
+        height: 400px;
+    }
+    jumbo {
+        top: 00px;
     }
     jumbo p {
         font-size: 5vw;
     }
     jumbo button {
         font-size: 3vw;
+    }
+    logo {
+        width: 1500px;
+        height: 400px;
+        display: inline-block;
+        vertical-align: middle;
     }
 }
