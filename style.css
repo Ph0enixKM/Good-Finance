@@ -87,6 +87,10 @@ body {
     font-family: Foobar;
 }
 
+mobile {
+    display: none;
+}
+
 @font-face {
     src: url('arts/Foobar\ Pro-Regular.otf');
     font-family: Foobar;
@@ -107,9 +111,45 @@ body {
         font-size: 3vw;
     }
     logo {
-        width: 750px;
-        height: 200px;
+        width: 562.5px;
+        height: 150px;
+        margin: 25px;
         display: inline-block;
         vertical-align: middle;
+    }
+    mobile {
+        display: inline-block;
+    }
+    desktop {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 0;
+        height: 200px;
+    }
+    jumbo {
+        top: 200px;
+    }
+    jumbo p {
+        font-size: 5vw;
+    }
+    jumbo button {
+        font-size: 3vw;
+    }
+    logo {
+        width: 562.5px;
+        height: 150px;
+        margin: 25px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    mobile {
+        display: inline-block;
+    }
+    desktop {
+        display: none;
     }
 }
