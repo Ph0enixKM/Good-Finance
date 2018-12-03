@@ -16,7 +16,41 @@ jumbo {
     top: 100px;
     background-image: url('arts/business.png');
     height: calc(50vh - 100px);
-    filter: saturate(2)
+}
+jumbo div.bg {
+    position: relative;
+    background-color: rgba(0,0,0,0.5);
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+jumbo p {
+    text-align: center;
+    position: relative;
+    top: calc(-1/2 * (50vh - 100px));
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: inline-block;
+    color: white;
+    font-size: 4vh;
+}
+jumbo button {
+    background-color: transparent;
+    margin: 25px;
+    border: solid white 4px;
+    color: white;
+    font-family: Foobar;
+    font-size: 4vh;
+    padding: 10px;
+    transition: 200ms;
+    cursor: pointer;
+    border-radius: 20px;
+}
+jumbo button:hover {
+    background-color: white;
+    color: #1F597C;
+    border-radius: 10px;
 }
 
 logo {
@@ -31,11 +65,20 @@ logo {
 }
 
 a {
+    transition: 200ms;
     color: #1F597C;
     text-decoration: none;
+    border-bottom: transparent 0px solid;
+}
+a:hover {
+    border-bottom: #1F597C 4px solid;
 }
 a.header {
     margin-right: 30px;
+}
+
+p {
+    margin: 0;
 }
 
 body {
@@ -53,5 +96,11 @@ body {
 @media (max-width: 750px) {
     header {
         padding: 0;
+    }
+    jumbo p {
+        font-size: 5vw;
+    }
+    jumbo button {
+        font-size: 3vw;
     }
 }
