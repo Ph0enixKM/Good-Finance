@@ -92,14 +92,13 @@ body {
     font-family: Foobar;
 }
 
-
-@media (max-width: 750px) {
+@media only screen and (max-device-width: 600px) {
     header {
         padding: 0;
-        height: 400px;
+        height: 200px;
     }
     jumbo {
-        top: 00px;
+        top: 200px;
     }
     jumbo p {
         font-size: 5vw;
@@ -108,8 +107,8 @@ body {
         font-size: 3vw;
     }
     logo {
-        width: 1500px;
-        height: 400px;
+        width: 750px;
+        height: 200px;
         display: inline-block;
         vertical-align: middle;
     }
