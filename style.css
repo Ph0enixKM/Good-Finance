@@ -10,6 +10,46 @@ header {
     padding: 0 20vw 0 20vw;
 }
 
+header mobile .menu {
+    display: inline-block;
+    background-image: url('arts/menu.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 50px;
+}
+
+header mobile .menu:hover {
+    transform: scale(0.9);
+    filter: brightness(1.3);
+}
+
+header mobile .menu-tab {
+    display: block;
+    position: absolute;
+    width: 100vw;
+    top: 200px;
+    left: 0;
+    background: white;
+    box-shadow: 0 50px 50px -50px black;
+    transform-origin: top;
+    transform: scaleY(0);
+    transition: 300ms;
+}
+header mobile a {
+    display: block;
+    margin: 10px;
+    padding: 20px;
+    border-top: 2px solid #eee;
+    font-size: 30px;
+    text-align: center;
+}
+
 jumbo {
     display: block;
     position: relative;
