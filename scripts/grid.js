@@ -14,7 +14,7 @@ let y = 0
 
 function update(c, canvas, x, y){
     c.clearRect(0, 0, width, height)
-    c.fillStyle = 'rgba(0,0,0,0.3)'
+    c.fillStyle = 'rgba(0,0,0,0.1)'
     c.fillRect(0, 0, width, height)
 
     for (let i = 0; i < width/50; i++){
