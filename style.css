@@ -17,7 +17,7 @@ jumbo {
     background-image: url('arts/business.png');
     height: calc(50vh - 100px);
 }
-jumbo div.bg {
+jumbo .bg {
     position: relative;
     background-color: rgba(0,0,0,0.5);
     top: 0px;
