@@ -54,7 +54,7 @@ jumbo {
     display: block;
     position: relative;
     top: 100px;
-    background-image: url('arts/business.png');
+    background-image: url('arts/butterfly.jpg');
     height: calc(50vh - 100px);
 }
 jumbo .bg {
