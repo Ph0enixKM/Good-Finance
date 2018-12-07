@@ -50,12 +50,17 @@ header mobile a {
     text-align: center;
 }
 
+cont {
+    position: relative;
+    top: 100px;
+}
+
 jumbo {
     display: block;
     position: relative;
-    top: 100px;
     background-image: url('arts/butterfly.jpg');
     height: calc(50vh - 100px);
+    box-shadow: 0 0 20px black;
 }
 jumbo .bg {
     position: relative;
@@ -131,6 +136,26 @@ mobile {
     display: none;
 }
 
+article {
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    background-position: center;
+    background-size: cover;
+}
+
+article p {
+    padding: 1vw;
+    font-size: 2vw;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+article#hipo {
+    background-image: url("arts/hipo.jpg");
+}
+    
+
 @font-face {
     src: url('arts/Foobar\ Pro-Regular.otf');
     font-family: Foobar;
@@ -141,7 +166,7 @@ mobile {
         padding: 0;
         height: 200px;
     }
-    jumbo {
+    cont {
         top: 200px;
     }
     jumbo p {
@@ -170,7 +195,7 @@ mobile {
         padding: 0;
         height: 200px;
     }
-    jumbo {
+    cont {
         top: 200px;
     }
     jumbo p {
