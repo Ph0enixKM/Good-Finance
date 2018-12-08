@@ -52,7 +52,7 @@ header mobile a {
 
 jumbo {
     display: block;
-    position: relative;
+    position: absolute;
     background-image: url('arts/butterfly.jpg');
     background-size: cover;
     background-position: center;
