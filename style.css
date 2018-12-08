@@ -172,14 +172,31 @@ article {
     position: relative;
 }
 
-article p {
-    /* padding: 1vw; */
-    font-size: 4vw;
+article .bg {
     background-color: rgba(0, 0, 0, 0.5);
+    height: 100vh;
+}
+
+article p {
+    position: relative;
+    bottom: 50px;
+    left: 50px;
+    font-size: 4vw;
+    background-color: black;
     text-shadow: 0 0 10px black, 0 0 10px black, 0 0 10px black;
     color: white;
-    line-height: 100vh;
+    display: inline-block;
+    padding: 10px;
     text-align: center;
+    transition: opacity 300ms, transform 500ms;
+    transition-timing-function: cubic-bezier(0,.84,.28,1);
+    transform: translate(0, -100%);
+    user-select: none;
+    cursor: pointer;
+}
+
+article p:hover {
+    opacity: 0.5;
 }
 
 article#hipo {
