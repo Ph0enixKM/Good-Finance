@@ -58,6 +58,7 @@ jumbo {
     height: 100vh;
     box-shadow: 0 0 20px black;
     scroll-snap-align: end;
+    border-top: 5px dashed white
 }
 jumbo .bg {
     position: relative;
@@ -222,9 +223,6 @@ article#car {
         padding: 0;
         height: 200px;
     }
-    cont {
-        top: 200px;
-    }
     jumbo p {
         font-size: 10vw;
     }
@@ -247,40 +245,7 @@ article#car {
         display: none;
     }
     article p {
-        font-size: 10vw;
-        flex: 1;
-    }
-}
-
-@media (max-width: 600px) {
-    header {
-        padding: 0;
-        height: 200px;
-    }
-    cont {
-        top: 200px;
-    }
-    jumbo p {
-        font-size: 7vw;
-    }
-    jumbo button {
-        font-size: 6vw;
-    }
-    logo {
-        width: 562.5px;
-        height: 150px;
-        margin: 25px;
-        display: inline-block;
-        vertical-align: middle;
-    }
-    mobile {
-        display: inline-block;
-    }
-    desktop {
-        display: none;
-    }
-    article p {
-        font-size: 10vw;
+        font-size: 8vw;
         flex: 1;
     }
 }
