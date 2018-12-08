@@ -52,14 +52,12 @@ header mobile a {
 
 jumbo {
     display: block;
-    position: absolute;
     background-image: url('arts/butterfly.jpg');
     background-size: cover;
     background-position: center;
-    height: calc(100vh - 100px);
+    height: 100vh;
     box-shadow: 0 0 20px black;
     scroll-snap-align: end;
-    top: 100px;
 }
 jumbo .bg {
     position: relative;
@@ -170,7 +168,6 @@ article {
     background-size: cover;
     scroll-snap-align: start;
     position: relative;
-    top: 100px;
 }
 
 article p {
