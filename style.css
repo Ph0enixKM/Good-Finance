@@ -12,7 +12,7 @@ header {
 
 header mobile .menu {
     display: inline-block;
-    background-image: url('arts/menu.jpg');
+    background-image: url('arts/menu.png');
     background-size: cover;
     background-position: center;
     z-index: 1;
@@ -22,6 +22,7 @@ header mobile .menu {
     right: 0;
     top: 0;
     margin: 50px;
+    transition: 300ms;
 }
 
 header mobile .menu:hover {
