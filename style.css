@@ -50,11 +50,6 @@ header mobile a {
     text-align: center;
 }
 
-cont {
-    position: relative;
-    top: 100px;
-}
-
 jumbo {
     display: block;
     position: relative;
@@ -63,7 +58,8 @@ jumbo {
     background-position: center;
     height: calc(100vh - 100px);
     box-shadow: 0 0 20px black;
-    scroll-snap-align: start;
+    scroll-snap-align: end;
+    top: 100px;
 }
 jumbo .bg {
     position: relative;
@@ -81,7 +77,8 @@ jumbo p {
     text-align: center;
     display: inline-block;
     color: white;
-    font-size: 4vh;
+    font-size: 4vw;
+    text-shadow: 0 0 10px black, 0 0 10px black, 0 0 10px black;
 }
 jumbo button {
     background-color: transparent;
@@ -89,16 +86,19 @@ jumbo button {
     border: solid white 4px;
     color: white;
     font-family: Foobar;
-    font-size: 4vh;
+    font-size: 3vw;
     padding: 10px;
     transition: 200ms;
     cursor: pointer;
     border-radius: 20px;
+    filter: drop-shadow(0 0 5px black);
+    text-shadow: 0 0 10px black, 0 0 10px black, 0 0 10px black;
 }
 jumbo button:hover {
     background-color: white;
     color: #1F597C;
     border-radius: 10px;
+    text-shadow: 0 0 0px white;
 }
 
 logo {
@@ -136,6 +136,8 @@ body {
     background-color: #eee;
     font-family: Foobar;
     overflow-y: hidden;
+    width: 100vw;
+    overflow-x: hidden;
 }
 
 cont {
@@ -151,6 +153,9 @@ cont {
     scroll-snap-type: mandatory;
     scroll-snap-destination: 0% 100%;
     scroll-snap-points-y: repeat(100%);
+    position: absolute;
+    /* transform: translate(0, 100px); */
+    /* transform: translate3d(0, 100px, 0); */
 }
 
 mobile {
@@ -164,23 +169,15 @@ article {
     background-position: center;
     background-size: cover;
     scroll-snap-align: start;
-}
-
-article:last-of-type::after {
-    width: 100vw;
-    height: 100px;
-    display: inline-block;
-    background-position: center;
-    background-size: cover;
-    scroll-snap-align: start;
-    color: red;
-    content: "";
+    position: relative;
+    top: 100px;
 }
 
 article p {
-    padding: 1vw;
+    /* padding: 1vw; */
     font-size: 4vw;
     background-color: rgba(0, 0, 0, 0.5);
+    text-shadow: 0 0 10px black, 0 0 10px black, 0 0 10px black;
     color: white;
     line-height: 100vh;
     text-align: center;
