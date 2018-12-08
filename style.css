@@ -59,7 +59,9 @@ jumbo {
     display: block;
     position: relative;
     background-image: url('arts/butterfly.jpg');
-    height: calc(50vh - 100px);
+    background-size: cover;
+    background-position: center;
+    height: calc(100vh - 100px);
     box-shadow: 0 0 20px black;
 }
 jumbo .bg {
@@ -71,11 +73,11 @@ jumbo .bg {
     height: 100%;
 }
 jumbo p {
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
     text-align: center;
-    position: relative;
-    top: calc(-1/2 * (50vh - 100px));
-    left: 50%;
-    transform: translate(-50%,-50%);
     display: inline-block;
     color: white;
     font-size: 4vh;
@@ -130,6 +132,10 @@ body {
     margin: 0px;
     background-color: #eee;
     font-family: Foobar;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: mandatory;
+    scroll-snap-destination: 0% 100%;
+    scroll-snap-points-x: repeat(100%);
 }
 
 mobile {
@@ -138,21 +144,27 @@ mobile {
 
 article {
     width: 100vw;
-    height: 50vh;
+    height: 100vh;
     display: flex;
     background-position: center;
     background-size: cover;
+    scroll-snap-align: start;
 }
 
 article p {
     padding: 1vw;
-    font-size: 2vw;
+    font-size: 4vw;
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
+    line-height: 100vh;
+    text-align: center;
 }
 
 article#hipo {
     background-image: url("arts/hipo.jpg");
+}
+article#gotow {
+    background-image: url("arts/gotow.jpg");
 }
     
 
@@ -170,10 +182,12 @@ article#hipo {
         top: 200px;
     }
     jumbo p {
-        font-size: 5vw;
+        font-size: 10vw;
     }
     jumbo button {
-        font-size: 3vw;
+        font-size: 10vw;
+        margin: 75px;
+        border: solid white 10px;
     }
     logo {
         width: 562.5px;
@@ -187,6 +201,10 @@ article#hipo {
     }
     desktop {
         display: none;
+    }
+    article p {
+        font-size: 10vw;
+        flex: 1;
     }
 }
 
@@ -199,10 +217,10 @@ article#hipo {
         top: 200px;
     }
     jumbo p {
-        font-size: 5vw;
+        font-size: 7vw;
     }
     jumbo button {
-        font-size: 3vw;
+        font-size: 6vw;
     }
     logo {
         width: 562.5px;
@@ -216,5 +234,9 @@ article#hipo {
     }
     desktop {
         display: none;
+    }
+    article p {
+        font-size: 10vw;
+        flex: 1;
     }
 }
