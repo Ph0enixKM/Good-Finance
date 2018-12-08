@@ -63,6 +63,7 @@ jumbo {
     background-position: center;
     height: calc(100vh - 100px);
     box-shadow: 0 0 20px black;
+    scroll-snap-align: start;
 }
 jumbo .bg {
     position: relative;
@@ -129,13 +130,27 @@ p {
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     margin: 0px;
     background-color: #eee;
     font-family: Foobar;
-    -webkit-overflow-scrolling: touch;
+    overflow-y: hidden;
+}
+
+cont {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    background-color: #eee;
+    font-family: Foobar;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    max-height: 100vh;
+    scroll-snap-type: y mandatory;
     scroll-snap-type: mandatory;
     scroll-snap-destination: 0% 100%;
-    scroll-snap-points-x: repeat(100%);
+    scroll-snap-points-y: repeat(100%);
 }
 
 mobile {
@@ -145,10 +160,21 @@ mobile {
 article {
     width: 100vw;
     height: 100vh;
-    display: flex;
+    display: inline-block;
     background-position: center;
     background-size: cover;
     scroll-snap-align: start;
+}
+
+article:last-of-type::after {
+    width: 100vw;
+    height: 100px;
+    display: inline-block;
+    background-position: center;
+    background-size: cover;
+    scroll-snap-align: start;
+    color: red;
+    content: "";
 }
 
 article p {
@@ -166,7 +192,9 @@ article#hipo {
 article#gotow {
     background-image: url("arts/gotow.jpg");
 }
-    
+article#car {
+    background-image: url("arts/car.jpg");
+}   
 
 @font-face {
     src: url('arts/Foobar\ Pro-Regular.otf');
@@ -174,6 +202,9 @@ article#gotow {
 }
 
 @media only screen and (max-device-width: 600px) {
+    body {
+        -webkit-overflow-scrolling:  touch;
+    }
     header {
         padding: 0;
         height: 200px;
