@@ -247,6 +247,8 @@ article#car {
     }
     article p {
         font-size: 8vw;
-        flex: 1;
+        bottom: 50%;
+        left: 0;
+        display: block;
     }
 }
