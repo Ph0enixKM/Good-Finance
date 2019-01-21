@@ -113,14 +113,14 @@ logo {
     vertical-align: middle;
 }
 
-a {
+a:not(.noeffect) {
     transition: 200ms;
     color: #1F597C;
     text-decoration: none;
     border-bottom: transparent 0px solid;
     outline: none;
 }
-a:hover {
+a:not(.noeffect):hover {
     border-bottom: #1F597C 4px solid;
 }
 a.header {
@@ -164,7 +164,7 @@ mobile {
     display: none;
 }
 
-article {
+cont article {
     width: 100vw;
     height: 100vh;
     display: inline-block;
@@ -174,7 +174,7 @@ article {
     position: relative;
 }
 
-article .bg {
+cont article .bg {
     background-color: rgba(0, 0, 0, 0.5);
     height: 100vh;
 }
@@ -210,6 +210,12 @@ article#gotow {
 article#car {
     background-image: url("arts/car.jpg");
 }   
+
+desc {
+    position: relative;
+    top: 100px;
+    padding: 10vw;
+}
 
 @font-face {
     src: url('arts/Foobar\ Pro-Regular.otf');
@@ -250,5 +256,8 @@ article#car {
         bottom: 50%;
         left: 0;
         display: block;
+    }
+    desc {
+        top: 200px;
     }
 }
