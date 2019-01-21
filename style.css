@@ -142,6 +142,27 @@ body {
     overflow-x: hidden;
 }
 
+body.scroll {
+    overflow-y: auto;
+}
+
+body::-webkit-scrollbar {
+	width: 12px;
+	background-color: #F5F5F5;
+}
+ 
+body::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+ 
+body::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #0E486B;
+}
+
 cont {
     display: flex;
     flex-direction: column;
@@ -214,7 +235,29 @@ article#car {
 desc {
     position: relative;
     top: 100px;
-    padding: 10vw;
+}
+
+desc p {
+    padding: 5vw;
+    font-size: 20px;
+    color: #222;
+}
+
+desc p.dark {
+    background-color: #ddd;
+}
+
+subheader {
+    display: block;
+    width: 100vw;
+    height: 300px;
+    background-image: url('arts/headerBg.png');
+    background-position: center;
+    background-size: cover;
+    color: #eee;
+    text-align: center;
+    line-height: 300px;
+    font-size: 70px;
 }
 
 @font-face {
