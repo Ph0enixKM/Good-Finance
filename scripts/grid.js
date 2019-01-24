@@ -41,12 +41,3 @@ window.addEventListener('mousemove', e => {
     update(c, canvas, x, y)
 })
 update(c, canvas, x, y)
-
-let oferta = document.querySelector('button#oferta')
-let art = document.querySelector('article')
-let cont = document.querySelector('cont')
-oferta.addEventListener('click', () => {
-        art.scrollIntoView({
-            behavior: 'smooth'
-        })
-})

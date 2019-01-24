@@ -241,10 +241,20 @@ desc p {
     padding: 5vw;
     font-size: 20px;
     color: #222;
+    color: #444;
 }
 
 desc p.dark {
     background-color: #ddd;
+}
+
+desc p.justify {
+    text-align: justify;
+}
+
+desc p.btn {
+    text-align: center;
+    font-size: 30px;
 }
 
 subheader {
