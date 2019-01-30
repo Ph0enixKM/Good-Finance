@@ -270,6 +270,12 @@ subheader {
     font-size: 70px;
 }
 
+footer {
+    height: 100px;
+    width: 100vw;
+    background-color: #1F597C;
+}
+
 @font-face {
     src: url('arts/Foobar\ Pro-Regular.otf');
     font-family: Foobar;
