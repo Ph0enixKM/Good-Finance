@@ -271,9 +271,62 @@ subheader {
 }
 
 footer {
-    height: 100px;
+    background-image: url('arts/headerBg.png');
+    background-position: center;
+    background-size: cover;
     width: 100vw;
-    background-color: #1F597C;
+    /* padding: 20px 10vw; */
+    color: #ddd;
+    text-align: justify;
+}
+
+flex {
+    display: flex;
+}
+
+flexu {
+    padding: 20px;
+    flex: 1;
+}
+
+footer high {
+    font-size: 40px;
+    padding-bottom: 50px;
+}
+
+footer p {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    padding: 0;
+    display: inline-block;
+}
+
+.map-responsive {
+    display: inline-block;
+    overflow: hidden;
+    /* padding-bottom: 56.25%; */
+    position: relative;
+    height: 200px;
+    width: calc(100% - 10px);
+    transition: 300ms;
+    filter: sepia(1) hue-rotate(180deg) contrast(0.5);
+}
+
+.map-responsive:hover {
+    filter: sepia(0) hue-rotate(0deg) contrast(1);
+}
+
+
+.map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 200px;
+    width: calc(100% - 10px);
+    position: absolute;
+    border-radius: 20px;
 }
 
 @font-face {
