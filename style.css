@@ -244,6 +244,13 @@ desc p {
     color: #444;
 }
 
+desc p.sub {
+   background-color: #e5e5e5;
+   margin: 0;
+   transition: 300ms;
+   display: none;
+}
+
 desc p.dark {
     background-color: #ddd;
 }
@@ -255,6 +262,16 @@ desc p.justify {
 desc p.btn {
     text-align: center;
     font-size: 30px;
+    transition: 300ms;
+}
+
+desc p.btn:hover {
+    background-color: #1F597C;
+    color: #ddd;
+}
+
+desc .center {
+    text-align: center;
 }
 
 subheader {
